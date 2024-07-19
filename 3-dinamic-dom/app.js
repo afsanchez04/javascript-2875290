@@ -31,8 +31,12 @@ function borrarElemento (e){
         main.removeChild(e.target.parentElement);
     }
 }
+function completarTarea (e){ 
+    e.target.style.textDecoration = 'line-through';
+}
 
 btnCrear.addEventListener('click',crear)
 btnBorrar.addEventListener('click',borrarPantalla)
 main.addEventListener('click',borrarElemento)
+main.addEventListener('click',completarTarea)
 
