@@ -4,13 +4,7 @@ const formulario = document.querySelector('.formulario')
 const username = document.querySelector('.username')
 const password = document.querySelector('.password')
 
-//Registrar el dato de "user" en localstorage
-let user = {
-    userName: 'admin',
-    userPass: '1234',
-}
 
-localStorage.setItem('user', JSON.stringify(user) )
 
 //Inicio de sesión
 function validarUsuario (e){
