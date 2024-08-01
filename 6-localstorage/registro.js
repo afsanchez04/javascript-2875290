@@ -13,6 +13,7 @@ function registrarUser(e) {
 
     localStorage.setItem('user', JSON.stringify(user))
 
+    formulario.reset();
 }
 
 formulario.addEventListener('submit', registrarUser)
